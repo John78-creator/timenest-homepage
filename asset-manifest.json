@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/timenest-homepage/static/css/main.5d2e65ae.css",
-    "main.js": "/timenest-homepage/static/js/main.dbd62d55.js",
+    "main.css": "/timenest-homepage/static/css/main.73d6c84f.css",
+    "main.js": "/timenest-homepage/static/js/main.f5929cd7.js",
     "static/js/453.8cbaae5d.chunk.js": "/timenest-homepage/static/js/453.8cbaae5d.chunk.js",
     "index.html": "/timenest-homepage/index.html",
-    "main.5d2e65ae.css.map": "/timenest-homepage/static/css/main.5d2e65ae.css.map",
-    "main.dbd62d55.js.map": "/timenest-homepage/static/js/main.dbd62d55.js.map",
+    "main.73d6c84f.css.map": "/timenest-homepage/static/css/main.73d6c84f.css.map",
+    "main.f5929cd7.js.map": "/timenest-homepage/static/js/main.f5929cd7.js.map",
     "453.8cbaae5d.chunk.js.map": "/timenest-homepage/static/js/453.8cbaae5d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5d2e65ae.css",
-    "static/js/main.dbd62d55.js"
+    "static/css/main.73d6c84f.css",
+    "static/js/main.f5929cd7.js"
   ]
 }
