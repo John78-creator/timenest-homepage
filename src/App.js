@@ -92,24 +92,24 @@ function App() {
         <h2>Why Choose TimeNest?</h2>
         <div className="features-grid">
           <div className="feature-card">
-            <div className="feature-icon">⏰</div>
-            <h3>Smart Scheduling</h3>
-            <p>AI-powered calendar management that adapts to your preferences</p>
+            <div className="feature-icon">📸</div>
+            <h3>개인 맞춤 회상 스토리</h3>
+            <p>AI가 당신의 소중한 추억을 분석하여 맞춤형 스토리를 제공합니다</p>
           </div>
           <div className="feature-card">
-            <div className="feature-icon">👥</div>
-            <h3>Team Collaboration</h3>
-            <p>Seamlessly coordinate with your team members in real-time</p>
+            <div className="feature-icon">📱</div>
+            <h3>디지털화 키트</h3>
+            <p>오래된 사진과 영상을 디지털로 변환하여 영원히 보관하세요</p>
           </div>
           <div className="feature-card">
-            <div className="feature-icon">📊</div>
-            <h3>Analytics Dashboard</h3>
-            <p>Gain insights into your productivity patterns and time usage</p>
+            <div className="feature-icon">🎁</div>
+            <h3>시대별 추억 소품</h3>
+            <p>각 시대의 특별했던 물건들로 추억을 더욱 생생하게 되살려보세요</p>
           </div>
           <div className="feature-card">
-            <div className="feature-icon">🌐</div>
-            <h3>Cross-Platform</h3>
-            <p>Access your schedule from any device, anywhere, anytime</p>
+            <div className="feature-icon">💌</div>
+            <h3>가족 메시지</h3>
+            <p>소중한 가족들과 추억을 공유하고 따뜻한 마음을 전달하세요</p>
           </div>
         </div>
       </section>
