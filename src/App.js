@@ -126,10 +126,21 @@ function App() {
           <div className="about-text">
             <h2>About TimeNest</h2>
             <p>
-              TimeNest is designed to help individuals and teams maximize their productivity
-              through intelligent time management. Our platform combines cutting-edge
-              technology with user-friendly design to create the perfect environment for
-              your scheduling needs.
+              우리는 추억을 담는 따뜻한 둥지입니다.<br/><br/>
+              TimeNEst는 <strong>"시간(Time)"과 "둥지(Nest)"</strong>를 결합한 이름입니다.<br/>
+              삶의 조각들을 안전하게 품고, 추억을 따뜻하게 보관하는 기억의 보금자리가 되고자 합니다.<br/><br/>
+              TimeNEst는 단순한 구독 서비스가 아닙니다.<br/>
+              고객 한 사람 한 사람의 인생을 기록하고, 가족과 함께 공유할 수 있도록 구성된 '인생 회상 프로젝트' 입니다.<br/><br/>
+              매달 감성 가득한 패키지를 받아보세요.<br/>
+              AI가 분석한 고객의 생애 데이터를 바탕으로,<br/>
+              그 시절의 향기와 감정이 살아 숨쉬는 추억을 다시 만나게 해드립니다.<br/><br/>
+              <strong>TimeNest는 프로젝트형 구독입니다</strong><br/>
+              '12개월 인생 프로젝트'<br/>
+              → 매달 회상 스토리와 콘텐츠를 받고,<br/>
+              → 마지막에는 내 삶을 정리한 '나만의 자서전'이 완성됩니다.<br/>
+              → PDF, USB, 가족용 영상으로 최종 선물까지.<br/><br/>
+              한 번의 구독이, 가족 전체의 감동이 됩니다.<br/>
+              Love your Time
             </p>
           </div>
         </div>
