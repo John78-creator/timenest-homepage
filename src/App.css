@@ -30,10 +30,63 @@
   color: #333;
   cursor: pointer;
   text-decoration: none;
+  gap: 0.8rem;
 }
 
 .logo-icon {
-  margin-right: 0.5rem;
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+
+.nest-circle {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ff6b6b, #ff8787);
+  box-shadow: 0 2px 10px rgba(255, 107, 107, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-origin: center;
+  animation: nestPulse 2s ease-in-out infinite;
+}
+
+.clock-face {
+  width: 80%;
+  height: 80%;
+  background: white;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock-hand {
+  position: absolute;
+  width: 2px;
+  height: 40%;
+  background: #333;
+  transform-origin: bottom center;
+  animation: clockRotate 4s linear infinite;
+}
+
+.clock-center {
+  width: 4px;
+  height: 4px;
+  background: #333;
+  border-radius: 50%;
+}
+
+.logo-text {
+  background: linear-gradient(135deg, #2c3e50, #3498db);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.8rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
 }
 
 .nav-links {
@@ -207,15 +260,6 @@
 .time-numbers:nth-child(3) { transform: translateY(120px); }
 .time-numbers:nth-child(4) { transform: translateX(-120px); }
 
-.clock-hand {
-  position: absolute;
-  bottom: 50%;
-  left: 50%;
-  transform-origin: bottom;
-  background: #333;
-  border-radius: 4px;
-}
-
 .hour-hand {
   width: 4px;
   height: 60px;
@@ -236,25 +280,32 @@
   background: #ff6b6b;
 }
 
-.clock-center {
-  position: absolute;
-  width: 12px;
-  height: 12px;
-  background: #ff6b6b;
-  border: 2px solid white;
-  border-radius: 50%;
-}
-
 /* Features Section */
 .features-section {
   padding: 6rem 2rem;
-  background: white;
+  position: relative;
+  background: none;
+  overflow: hidden;
+}
+
+.features-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('https://images.unsplash.com/photo-1511895426328-dc8714191300?q=80&w=2070&auto=format&fit=crop') center/cover no-repeat fixed;
+  opacity: 0.2;
+  z-index: -1;
 }
 
 .features-section h2 {
-  color: #333;
+  color: #2c3e50;
   margin-bottom: 3rem;
   font-size: 2.5rem;
+  position: relative;
+  font-weight: 600;
 }
 
 .features-grid {
@@ -263,18 +314,23 @@
   gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
+  position: relative;
 }
 
 .feature-card {
-  padding: 2rem;
-  background: white;
+  padding: 2.5rem;
+  background: rgba(255, 255, 255, 0.95);
   border-radius: 15px;
-  transition: transform 0.3s ease;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .feature-card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  background: rgba(255, 255, 255, 0.98);
 }
 
 .feature-icon {
@@ -532,4 +588,25 @@
   .team-members p {
     font-size: 0.8rem;
   }
+}
+
+.emphasis-text {
+  color: #1a365d;
+  font-weight: 800;
+  font-size: 1.2em;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  padding: 0.2em 0;
+  background: linear-gradient(120deg, rgba(74, 144, 226, 0.1) 0%, rgba(74, 144, 226, 0.1) 100%);
+  border-radius: 4px;
+}
+
+@keyframes nestPulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+@keyframes clockRotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
